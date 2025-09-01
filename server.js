@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const db = require("./init-db"); // اتصال قاعدة البيانات
+const db = require("./init-db"); 
 
 const app = express();
 app.use(bodyParser.json());
