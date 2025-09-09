@@ -29,7 +29,7 @@ It provides functionality for **user registration, login, and idea management** 
 
 You can explore and test the API using the Postman Collection below:
 
-👉 [Postman Collection](https://goatme.postman.co/workspace/SocialNet-API~f41737ee-6515-4f7d-8266-fe9389bba116/collection/40780206-2533f6db-4603-49f6-bfdf-a60085319d68?action=share&creator=40780206)
+👉 [Postman Collection](https://goatme.postman.co/workspace/SocialNet-API~f41737ee-6515-4f7d-8266-fe9389bba116/collection/40780206-17876d96-11d7-4011-90f0-a6b2e1afa3da?action=share&creator=40780206&active-environment=40780206-933f2555-d54b-4b2b-84d7-4af1c94aac5e)
 
 ---
 ## 🚀 How to Run the Project
