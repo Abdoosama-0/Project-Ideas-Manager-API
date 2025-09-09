@@ -1,16 +1,29 @@
-## 📌 Project Description
-**Project-Ideas-Manager-API** is a simple **Node.js + Express.js** project for managing project ideas stored in a **SQLite database**.  
-It demonstrates how to:
-- Build RESTful API endpoints.  
-- Fetch all ideas.  
-- Retrieve a single idea by its **ID**.  
-- Add a new idea.  
-- Update an existing idea.  
-- Delete an idea.  
-- Work with a relational database (**SQLite**) instead of static JSON files.  
+## Idea Management API  
 
-This project was created as part of a learning exercise on **Express.js**, **API development**, and **SQLite database handling** in Node.js.  
+This project is a **Node.js RESTful API** that allows users to manage their ideas with authentication and secure access.  
+It provides functionality for **user registration, login, and idea management** with advanced database querying.  
 
+## Features  
+
+### 🔐 User Authentication  
+- Register new users with hashed passwords.  
+- Login with username and password to get a JWT token.  
+- Middleware to protect routes using JWT authentication.  
+
+### 💡 Idea Management (CRUD)  
+- Create, Read, Update, and Delete ideas.  
+- Each idea can be linked to a specific user.  
+- Protected routes → only authenticated users can manage their ideas.  
+
+### 📊 Advanced Querying  
+- **Filtering**:  
+  Example → `/api/ideas?status=Concept`  
+
+- **Sorting**:  
+  Example → `/api/ideas?sort=title&order=asc`  
+
+- **Pagination**:  
+  Example → `/api/ideas?_limit=10&_page=1`  
 ---
 ## 📬 Postman Collection and API endpoint documentation
 
@@ -29,7 +42,11 @@ Make sure you have **Node.js** installed on your machine.
 2. **Install dependencies**  
    ```bash
    npm install
-3. **Start the server**  
+3. **create .env**
+   ```bash
+   SECRET_KEY=your_secret_ket
+   
+4. **Start the server**  
    ```bash
    npm run dev
 
@@ -39,4 +56,7 @@ Make sure you have **Node.js** installed on your machine.
 - **JavaScript (ES6+)** → Core language used.
 - **SQLite** → Lightweight relational database.
 - **JSON** → For storing user data.  
-- **Git & GitHub** → For version control and collaboration.  
+- **Git & GitHub** → For version control and collaboration.
+- **bcryptjs** → For hashing and verifying passwords.  
+- **jsonwebtoken** → For generating and verifying JWT tokens.  
+- **dotenv** → For managing environment variables securely.  
